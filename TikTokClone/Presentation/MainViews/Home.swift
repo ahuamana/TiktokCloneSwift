@@ -16,7 +16,60 @@ struct Home:View {
             VStack {
                 Spacer()
                 
-                
+                HStack {
+                    Spacer()
+                    VStack(spacing: 35){
+                        Button(action: {
+                            
+                        }, label: {
+                            Image("pic")
+                                .renderingMode(.original)
+                                .resizable()
+                                .frame(width: 55, height: 55)
+                                .clipShape(Circle())
+                        })
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            VStack {
+                                Image(systemName: "suit.heart.fill")
+                                    .font(.title)
+                                    .foregroundColor(.white)
+                                Text("400k")
+                                    .foregroundColor(.white)
+                            }
+                            
+                        })
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            
+                            VStack(spacing: 8) {
+                                Image("message.fill")
+                                    .font(.title)
+                                    .foregroundColor(.white)
+                                Text("1542")
+                                    .foregroundColor(.white)
+                            }
+                        })
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            VStack {
+                                Image(systemName: "arrowshape.turn.up.right.fill")
+                                    .font(.title)
+                                    .foregroundColor(.white)
+                                Text("Share")
+                                    .foregroundColor(.white)
+                            }
+                        })
+                    }
+                    .padding(.bottom, 55)
+                    .padding(.trailing, 20)
+                }
                 
                 HStack(spacing: 0) {
                     Button(action: {
@@ -70,7 +123,7 @@ struct Home:View {
                     Button(action: {
                         
                     }, label: {
-                        Image("upload")
+                        Image("profile")
                             .resizable()
                             .frame(width: 30, height: 30)
                             .foregroundColor(self.index == 2 ? .white : Color.white.opacity(0.35))
@@ -80,7 +133,11 @@ struct Home:View {
                 }
                 .padding(.horizontal)
             }
+            .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0)
+            .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0)
         }
+        .background(Color.black.edgesIgnoringSafeArea(.all))
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
