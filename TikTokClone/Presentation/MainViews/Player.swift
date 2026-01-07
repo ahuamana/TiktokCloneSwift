@@ -14,10 +14,12 @@ struct PlayerView : View {
     @Binding var data: [Video]
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             ForEach(0 ..< self.data.count) { index in
                 ZStack {
                     Player(player: data[index].player)
+                        .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+                        .offset(y: -5)
                 }
             }
         }
