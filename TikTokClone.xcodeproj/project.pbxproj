@@ -6,15 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		0B935F992EFA21960077A9D6 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0B935F932EFA21960077A9D6 /* video2.mp4 */; };
-		0B935F9A2EFA21960077A9D6 /* video4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0B935F942EFA21960077A9D6 /* video4.mp4 */; };
-		0B935F9B2EFA21960077A9D6 /* video6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0B935F952EFA21960077A9D6 /* video6.mp4 */; };
-		0B935F9C2EFA21960077A9D6 /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0B935F962EFA21960077A9D6 /* video3.mp4 */; };
-		0B935F9D2EFA21960077A9D6 /* video5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0B935F972EFA21960077A9D6 /* video5.mp4 */; };
-		0B935F9E2EFA21960077A9D6 /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0B935F982EFA21960077A9D6 /* video1.mp4 */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXBuildRule section */
 		0B935FAF2EFA26AE0077A9D6 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
@@ -30,16 +21,15 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
-		0B935F932EFA21960077A9D6 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video2.mp4; path = "../../../../Downloads/tiktok lesson/videos/video2.mp4"; sourceTree = "<group>"; };
-		0B935F942EFA21960077A9D6 /* video4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video4.mp4; path = "../../../../Downloads/tiktok lesson/videos/video4.mp4"; sourceTree = "<group>"; };
-		0B935F952EFA21960077A9D6 /* video6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video6.mp4; path = "../../../../Downloads/tiktok lesson/videos/video6.mp4"; sourceTree = "<group>"; };
-		0B935F962EFA21960077A9D6 /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video3.mp4; path = "../../../../Downloads/tiktok lesson/videos/video3.mp4"; sourceTree = "<group>"; };
-		0B935F972EFA21960077A9D6 /* video5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video5.mp4; path = "../../../../Downloads/tiktok lesson/videos/video5.mp4"; sourceTree = "<group>"; };
-		0B935F982EFA21960077A9D6 /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video1.mp4; path = "../../../../Downloads/tiktok lesson/videos/video1.mp4"; sourceTree = "<group>"; };
 		0B935FBC2EFA28C50077A9D6 /* TikTokClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTokClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		0B60C0632EFAD40A0086AC7C /* Videos */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		0B935F7A2EFA20E70077A9D6 /* TikTokClone */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TikTokClone;
@@ -61,12 +51,7 @@
 		0B935F6F2EFA20E70077A9D6 = {
 			isa = PBXGroup;
 			children = (
-				0B935F982EFA21960077A9D6 /* video1.mp4 */,
-				0B935F932EFA21960077A9D6 /* video2.mp4 */,
-				0B935F962EFA21960077A9D6 /* video3.mp4 */,
-				0B935F942EFA21960077A9D6 /* video4.mp4 */,
-				0B935F972EFA21960077A9D6 /* video5.mp4 */,
-				0B935F952EFA21960077A9D6 /* video6.mp4 */,
+				0B60C0632EFAD40A0086AC7C /* Videos */,
 				0B935F7A2EFA20E70077A9D6 /* TikTokClone */,
 				0B935FBC2EFA28C50077A9D6 /* TikTokClone.app */,
 			);
@@ -89,6 +74,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				0B60C0632EFAD40A0086AC7C /* Videos */,
 				0B935F7A2EFA20E70077A9D6 /* TikTokClone */,
 			);
 			name = TikTokClone;
@@ -137,12 +123,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B935F992EFA21960077A9D6 /* video2.mp4 in Resources */,
-				0B935F9A2EFA21960077A9D6 /* video4.mp4 in Resources */,
-				0B935F9B2EFA21960077A9D6 /* video6.mp4 in Resources */,
-				0B935F9C2EFA21960077A9D6 /* video3.mp4 in Resources */,
-				0B935F9D2EFA21960077A9D6 /* video5.mp4 in Resources */,
-				0B935F9E2EFA21960077A9D6 /* video1.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
