@@ -27,6 +27,10 @@ struct PlayerScrollView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIScrollView, context: Context) {
+        uiView.contentSize = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat(data.count))
         
+        for i in 0..<uiView.subviews.count{
+            uiView.subviews[i].frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * CGFloat(data.count))
+        }
     }
 }
