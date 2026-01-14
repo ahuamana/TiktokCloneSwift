@@ -39,6 +39,9 @@ struct Player: UIViewControllerRepresentable {
         view.player = player
         view.showsPlaybackControls = false
         view.videoGravity = .resizeAspectFill
+        
+        
+        
         return view
     }
     
