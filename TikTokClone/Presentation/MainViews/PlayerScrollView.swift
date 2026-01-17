@@ -26,6 +26,7 @@ struct PlayerScrollView: UIViewRepresentable {
         
         view.contentInsetAdjustmentBehavior = .never
         view.isPagingEnabled = true
+        view.delegate = context.coordinator
         
         return view
     }
@@ -45,8 +46,21 @@ struct PlayerScrollView: UIViewRepresentable {
             self.view = view
         }
         
-        func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+            let currentIndex = Int(scrollView.contentOffset.y / UIScreen.main.bounds.height)
             
+            var index = 0
+            
+            if currentIndex != index {
+                index = currentIndex
+                
+                for i in 0..<view.data.count {
+                    view.data[i].player.seek(to: .zero)
+                    view.data[i].player.play()
+                }
+                
+                view.data[index].player.play()
+            }
         }
     }
 }
